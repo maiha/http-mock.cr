@@ -2,5 +2,5 @@
 /libs/
 /.crystal/
 /.shards/
-/.crenv_version
+/.crystal-version
 

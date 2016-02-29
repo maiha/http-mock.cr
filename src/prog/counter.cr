@@ -42,7 +42,7 @@ at_exit {
   handlers.stop
   STDOUT.flush
   STDERR.flush
-  sleep 1.0
+  sleep 0.1
 }
 Signal::INT.trap { exit }
 
@@ -50,7 +50,6 @@ handlers.start
 
 server = HTTP::Server.new(listen_host, listen_port) do |context|
   handlers.handle(context)
-  sleep 0
 end
 
 puts "Start Http Server on #{listen_host}:#{listen_port}"

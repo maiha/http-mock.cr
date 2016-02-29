@@ -19,7 +19,6 @@ class Handler::Group
   private def each(&block)
     handlers.each do |h|
       yield h
-      sleep 0
     end
   end
 end

@@ -82,4 +82,8 @@ class Handler::Counter
       puts "#{code}: #{counts[code]}"
     end
   end
+
+  def to_s
+    total.to_s
+  end
 end
